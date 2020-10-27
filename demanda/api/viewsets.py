@@ -8,7 +8,7 @@ class DemandaViewSet(ModelViewSet):
     serializer_class = DemandaSerializer
 
     def get_queryset(self):
-        return Demanda.objects.all()
+        return Demanda.objects.filter(status=True)
     
     @action(methods=['patch'], detail=True)
     def finalizar_demanda(self, request, *args, **kwargs):
