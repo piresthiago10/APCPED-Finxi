@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "248b9aff-2bf3-4674-9e72-9a2eb6e96c79",
+		"name": "finxi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post demanda",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"descricao_peca\": \"Propulsor Millenium Falcon\",\n    \"endereco_entrega\": {\n        \"logradouro\": \"Rua Onze\",\n        \"numero\": \"10\",\n        \"bairro\": \"Liberdade\",\n        \"cidade\": \"São Paulo\",\n        \"estado\": \"São Paulo\",\n        \"cep\": \"23847-985\"\n    },\n    \"informacoes_contato\": \"nenhuma\",\n        \"anunciante\": 1,\n    \"status\": false\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/demandas/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"demandas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get demandas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get demanda",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/demandas/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"demandas",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete demanda",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/demandas/2/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"demandas",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update demanda",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 3,\n    \"descricao_peca\": \"Propulsor\",\n    \"endereco_entrega\": {\n        \"id\": 4,\n        \"logradouro\": \"Rua Onze\",\n        \"numero\": \"10\",\n        \"bairro\": \"Liberdade\",\n        \"cidade\": \"São Paulo\",\n        \"estado\": \"São Paulo\",\n        \"cep\": \"23847-985\"\n    },\n    \"informacoes_contato\": \"nenhuma\",\n    \"anunciante\": 1,\n    \"status\": false\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/demandas/3/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"demandas",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "patch demanda",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\": true\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/demandas/3/finalizar_demanda/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"demandas",
+						"3",
+						"finalizar_demanda",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
