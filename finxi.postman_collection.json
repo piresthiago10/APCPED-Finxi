@@ -14,11 +14,16 @@
 						"key": "Content-Type",
 						"value": "application/json",
 						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Token be7cc8a68ab5f039d30f4b9c518dbcd6fa714f77",
+						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"descricao_peca\": \"Propulsor Millenium Falcon\",\n    \"endereco_entrega\": {\n        \"logradouro\": \"Rua Onze\",\n        \"numero\": \"10\",\n        \"bairro\": \"Liberdade\",\n        \"cidade\": \"São Paulo\",\n        \"estado\": \"São Paulo\",\n        \"cep\": \"23847-985\"\n    },\n    \"informacoes_contato\": \"nenhuma\",\n        \"anunciante\": 1,\n    \"status\": false\n}"
+					"raw": "{\n    \"descricao_peca\": \"Propulsor Atômico 153\",\n    \"endereco_entrega\": {\n        \"logradouro\": \"Rua Planeta\",\n        \"numero\": \"10\",\n        \"bairro\": \"Liberdade\",\n        \"cidade\": \"São Paulo\",\n        \"estado\": \"São Paulo\",\n        \"cep\": \"23847-985\"\n    },\n    \"informacoes_contato\": \"nenhuma\",\n    \"status\": true\n}"
 				},
 				"url": {
 					"raw": "http://127.0.0.1:8000/demandas/",
@@ -42,20 +47,15 @@
 			"name": "get demandas",
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token be7cc8a68ab5f039d30f4b9c518dbcd6fa714f77",
+						"type": "text"
+					}
+				],
 				"url": {
-					"raw": ""
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "get demanda",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://127.0.0.1:8000/demandas/3",
+					"raw": "http://127.0.0.1:8000/demandas/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -66,7 +66,36 @@
 					"port": "8000",
 					"path": [
 						"demandas",
-						"3"
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get demanda",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token be7cc8a68ab5f039d30f4b9c518dbcd6fa714f77",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/demandas/10",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"demandas",
+						"10"
 					]
 				}
 			},
@@ -76,9 +105,15 @@
 			"name": "delete demanda",
 			"request": {
 				"method": "DELETE",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token be7cc8a68ab5f039d30f4b9c518dbcd6fa714f77",
+						"type": "text"
+					}
+				],
 				"url": {
-					"raw": "http://127.0.0.1:8000/demandas/2/",
+					"raw": "http://127.0.0.1:8000/demandas/5",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -89,8 +124,7 @@
 					"port": "8000",
 					"path": [
 						"demandas",
-						"2",
-						""
+						"5"
 					]
 				}
 			},
@@ -105,14 +139,19 @@
 						"key": "Content-Type",
 						"value": "application/json",
 						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Token be7cc8a68ab5f039d30f4b9c518dbcd6fa714f77",
+						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"id\": 3,\n    \"descricao_peca\": \"Propulsor\",\n    \"endereco_entrega\": {\n        \"id\": 4,\n        \"logradouro\": \"Rua Onze\",\n        \"numero\": \"10\",\n        \"bairro\": \"Liberdade\",\n        \"cidade\": \"São Paulo\",\n        \"estado\": \"São Paulo\",\n        \"cep\": \"23847-985\"\n    },\n    \"informacoes_contato\": \"nenhuma\",\n    \"anunciante\": 1,\n    \"status\": false\n}"
+					"raw": "{\n\n    \"descricao_peca\": \"Propulsor Atômico 545d4g\",\n    \"endereco_entrega\": {\n\n        \"logradouro\": \"Rua Vinte\",\n        \"numero\": \"10\",\n        \"bairro\": \"Liberdade\",\n        \"cidade\": \"São Paulo\",\n        \"estado\": \"São Paulo\",\n        \"cep\": \"23847-985\"\n    },\n    \"informacoes_contato\": \"nenhuma\",\n    \"status\": true\n}"
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/demandas/3/",
+					"raw": "http://127.0.0.1:8000/demandas/11/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -123,7 +162,7 @@
 					"port": "8000",
 					"path": [
 						"demandas",
-						"3",
+						"11",
 						""
 					]
 				}
@@ -139,14 +178,19 @@
 						"key": "Content-Type",
 						"value": "application/json",
 						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Token de4c37a4942c4b86b6d008f0d1ed095097f90a47",
+						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"status\": true\n}"
+					"raw": "{\n    \"status\": false\n}"
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/demandas/3/finalizar_demanda/",
+					"raw": "http://127.0.0.1:8000/demandas/8/finalizar_demanda/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -157,8 +201,59 @@
 					"port": "8000",
 					"path": [
 						"demandas",
-						"3",
+						"8",
 						"finalizar_demanda",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "anunciante_01",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "abc123!@",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api-token-auth/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api-token-auth",
 						""
 					]
 				}
