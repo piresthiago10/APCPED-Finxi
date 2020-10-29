@@ -5,7 +5,6 @@ from django.contrib.auth.models import User
 from django.db import models
 from endereco.models import Endereco
 
-
 class Demanda(models.Model):
     descricao_peca = models.CharField(max_length=150, null=False, blank=False)
     endereco_entrega = models.ForeignKey(
