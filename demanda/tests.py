@@ -67,7 +67,7 @@ class RegistrationTestCase(APITestCase):
 class RegistrationTestCaseNoToken(APITestCase):
 
     def test_nova_demanda_sem_token(self):
-                """[teste de criação de demanda sem autenticação]
+        """[teste de criação de demanda sem autenticação]
         """
         data = {
             "descricao_peca": "Propulsor Atômico 153",
@@ -79,7 +79,7 @@ class RegistrationTestCaseNoToken(APITestCase):
                 "estado": "São Paulo",
                 "cep": "23847-985"
             },
-            "informacoes_contato": "nenhuma",
+            "informacoes_contato": "email: comercial@empresa.com.br, telefone: (21) 00000-0000",
             "status": True
         }
 
