@@ -2,8 +2,10 @@ from rest_framework.permissions import BasePermission, SAFE_METHODS
 
 
 class IsOwnerOrReadOnly(BasePermission):
-    """
-    Object-level permission to only allow owners of an object to edit it.
+    """[apenas o dono pode editar seu próprio objeto]
+
+    Args:
+        BasePermission ([permission]): [ações para endpoints]
     """
     def has_object_permission(self, request, view, obj):
 
