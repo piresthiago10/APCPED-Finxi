@@ -51,7 +51,7 @@ Ao rodar o projeto pela primeira vez será criado o banco de dados, a instalaç�
 
 No Postman, importe a collection através do arquivo finxi.postman_collection.json e na request [post login] insira o username e password de um usuário anunciante criado, a response será o token de acesso desse anunciante.
 
-Em cada uma das requests da collection exite em Headers Key e Value, na Key Autorizathion insira na Value "Token + o token de acesso desse anunciante" (sem aspas).
+Em cada uma das requests da collection existe em Headers Key e Value, na Key Autorizathion insira na Value "Token + o token de acesso desse anunciante" (sem aspas).
 
 ## Ferramentas utilizadas:
 
