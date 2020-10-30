@@ -16,16 +16,36 @@ class DemandaViewSet(ModelViewSet):
     authentication_classes = [TokenAuthentication]
 
     def get_queryset(self):
+        """[Exibe apenas as demandas não finalizadas]
+
+        Returns:
+            [filter]: [demandas com os status True]
+        """
         return Demanda.objects.filter(status=True)
     
     @action(methods=['patch'], detail=True)
     def finalizar_demanda(self, request, *args, **kwargs):
+        """[Alteração do status de uma demanda]
 
+        Args:
+            request ([request]): [requisição http]
+
+        Returns:
+            [metodo]: [atualização parcial de uma demanda]
+        """
         kwargs['partial'] = True
 
         return self.update(request, *args, **kwargs)
 
     def create(self, request, *args, **kwargs):
+        """[Cria uma nova demanda]
+
+        Args:
+            request ([request]): [requisição http]
+
+        Returns:
+            [Response]: [dados da nova demanda, status http e headers]
+        """
         request.data['anunciante'] = request.user.pk
         serializer = self.get_serializer(data=request.data)
         print(request.data)
@@ -35,6 +55,14 @@ class DemandaViewSet(ModelViewSet):
         return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
 
     def update(self, request, *args, **kwargs):
+        """[Atualiza uma requisição]
+
+        Args:
+            request ([request]): [requisição http]
+
+        Returns:
+            [type]: [dados da demanda atualizada]
+        """
         request.data['anunciante'] = request.user.pk
         partial = kwargs.pop('partial', False)
         instance = self.get_object()
