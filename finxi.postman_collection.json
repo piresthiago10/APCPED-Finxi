@@ -17,7 +17,7 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "Token be7cc8a68ab5f039d30f4b9c518dbcd6fa714f77",
+						"value": "Token 628761a2e766ab1091ebff08367d53b44b64fe3b",
 						"type": "text"
 					}
 				],
@@ -26,13 +26,13 @@
 					"raw": "{\n    \"descricao_peca\": \"Propulsor Atômico 153\",\n    \"endereco_entrega\": {\n        \"logradouro\": \"Rua Planeta\",\n        \"numero\": \"10\",\n        \"bairro\": \"Liberdade\",\n        \"cidade\": \"São Paulo\",\n        \"estado\": \"São Paulo\",\n        \"cep\": \"23847-985\"\n    },\n    \"informacoes_contato\": \"nenhuma\",\n    \"status\": true\n}"
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/demandas/",
+					"raw": "http://0.0.0.0:8000/demandas/",
 					"protocol": "http",
 					"host": [
-						"127",
 						"0",
 						"0",
-						"1"
+						"0",
+						"0"
 					],
 					"port": "8000",
 					"path": [
@@ -55,13 +55,13 @@
 					}
 				],
 				"url": {
-					"raw": "http://127.0.0.1:8000/demandas/",
+					"raw": "http://0.0.0.0:8000/demandas/",
 					"protocol": "http",
 					"host": [
-						"127",
 						"0",
 						"0",
-						"1"
+						"0",
+						"0"
 					],
 					"port": "8000",
 					"path": [
@@ -79,23 +79,23 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Token be7cc8a68ab5f039d30f4b9c518dbcd6fa714f77",
+						"value": "Token 628761a2e766ab1091ebff08367d53b44b64fe3b",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "http://127.0.0.1:8000/demandas/10",
+					"raw": "http://0.0.0.0:8000/demandas/1",
 					"protocol": "http",
 					"host": [
-						"127",
 						"0",
 						"0",
-						"1"
+						"0",
+						"0"
 					],
 					"port": "8000",
 					"path": [
 						"demandas",
-						"10"
+						"1"
 					]
 				}
 			},
@@ -108,23 +108,23 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Token be7cc8a68ab5f039d30f4b9c518dbcd6fa714f77",
+						"value": "Token 628761a2e766ab1091ebff08367d53b44b64fe3b",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "http://127.0.0.1:8000/demandas/5",
+					"raw": "http://0.0.0.0:8000/demandas/1",
 					"protocol": "http",
 					"host": [
-						"127",
 						"0",
 						"0",
-						"1"
+						"0",
+						"0"
 					],
 					"port": "8000",
 					"path": [
 						"demandas",
-						"5"
+						"1"
 					]
 				}
 			},
@@ -151,13 +151,13 @@
 					"raw": "{\n\n    \"descricao_peca\": \"Propulsor Atômico 545d4g\",\n    \"endereco_entrega\": {\n\n        \"logradouro\": \"Rua Vinte\",\n        \"numero\": \"10\",\n        \"bairro\": \"Liberdade\",\n        \"cidade\": \"São Paulo\",\n        \"estado\": \"São Paulo\",\n        \"cep\": \"23847-985\"\n    },\n    \"informacoes_contato\": \"nenhuma\",\n    \"status\": true\n}"
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/demandas/11/",
+					"raw": "http://0.0.0.0:8000/demandas/11/",
 					"protocol": "http",
 					"host": [
-						"127",
 						"0",
 						"0",
-						"1"
+						"0",
+						"0"
 					],
 					"port": "8000",
 					"path": [
@@ -190,13 +190,13 @@
 					"raw": "{\n    \"status\": false\n}"
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/demandas/8/finalizar_demanda/",
+					"raw": "http://0.0.0.0:8000/demandas/8/finalizar_demanda/",
 					"protocol": "http",
 					"host": [
-						"127",
 						"0",
 						"0",
-						"1"
+						"0",
+						"0"
 					],
 					"port": "8000",
 					"path": [
@@ -232,24 +232,24 @@
 					"formdata": [
 						{
 							"key": "username",
-							"value": "anunciante_01",
+							"value": "admin",
 							"type": "text"
 						},
 						{
 							"key": "password",
-							"value": "abc123!@",
+							"value": "admin",
 							"type": "text"
 						}
 					]
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api-token-auth/",
+					"raw": "http://0.0.0.0:8000/api-token-auth/",
 					"protocol": "http",
 					"host": [
-						"127",
 						"0",
 						"0",
-						"1"
+						"0",
+						"0"
 					],
 					"port": "8000",
 					"path": [
