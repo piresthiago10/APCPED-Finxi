@@ -29,7 +29,7 @@ docker-compose up
 
 1. Acesse a pasta APCPED-Finxi e execute o comando:
 ```
-sudo docker exec 4e11f1a2f611 python3 manage.py test
+sudo docker exec [id do container] python3 manage.py test
 ```
 
 ## Utilizando o projeto:
